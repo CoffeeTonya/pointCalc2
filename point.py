@@ -49,7 +49,7 @@ if selected_item == '受注設定':
     if 0 < product >= 1:
         st.write('※１行目にポイントが発生しない商品を入れないでください。')
         check01 = st.checkbox('ビーンズクラブ会員対象品', key=1001)
-        col03, col01, col01_1, col01_2, col02, col04 = st.beta_columns([2,2,2,2,2,2])
+        col03, col01, col01_1, col01_2, col02, col04 = st.columns([2,2,2,2,2,2])
         with col03:
             tax01 = st.selectbox('税率', [0.08, 0.1], key=3)
         with col01:
