@@ -355,7 +355,7 @@ else:
     price = st.sidebar.text_input('税込金額', 0, key=1)
     tax = st.sidebar.selectbox('税率', [0.08, 0.1])
 
-    col01, col02 = st.beta_columns([1,1])
+    col01, col02 = st.columns([1,1])
     with col01:
         st.text_input('ホワイト会員（1%還元）', int((Decimal(price) / Decimal(1 + tax)) * Decimal(white)), key=2)
     with col02:
